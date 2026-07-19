@@ -1,0 +1,198 @@
+.hero-section {
+    background-color: #ECE1DB;
+}
+
+.hero-section .hero-image {
+    width: 100%;      /* Take up full width of the container */
+    max-width: 800px; /* But don't let it get ridiculously huge on 2K monitors */
+    height: auto;
+    display: block;
+    margin: 0 auto 1.5rem auto; /* Centers the image and adds space below it */
+}
+
+.hero-section .inner-container {
+    padding: 0 1em;
+    width: 100%;
+}
+
+/* Big padding ONLY on large screens */
+@media (min-width: 1200px) {
+    .hero-section .inner-container {
+        padding: 0 19em;
+    }
+}
+
+.navbar {
+    background-color: white !important;
+    padding: 1rem;
+}
+
+.nav-holder {
+    padding: 0.5% 0em;
+}
+
+.nav-holder .nav-item{
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+.nav-holder .nav-link {
+    color: black;
+}
+
+.banner-text {
+    color: #675b4f;
+    margin-bottom: 0;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.small-cta {
+    max-width: 300px;
+}
+
+.left-cta {
+    margin: 20px 0 !important;
+}
+
+.cta {
+    display: block;   /* Allows margin auto to work */
+    margin: 20px auto; 
+    padding: 1em 2em;
+    background-color: black;
+    border: none;
+}
+
+.cta:hover {
+    background-color: #333333 !important;
+    color: white; /* Optional: ensures text stays readable */
+    transition: background-color 0.3s ease; /* Makes the color fade in smoothly */
+}
+
+.cta a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.site-footer {
+    background-color: black !important;
+}
+
+.site-footer .copyright, .site-footer .privacy {
+    font-size: 0.8em;
+    font-weight: 200;
+}
+
+.site-footer .privacy {
+    color: white;
+}
+
+.footer-icons img {
+    max-height: 1.2em;
+    padding: 0 1em;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+/* Applies only from 1200px up to 2559px */
+@media (min-width: 1200px) and (max-width: 2559.98px) {
+    main .container {
+        padding: 0 12em;
+    }
+}
+
+@media (min-width: 2560px) {
+    main .container {
+        padding: 0 !important; /* Resets it back to no extra padding */
+    }
+}
+
+@media (min-width: 1200px) {
+    main .container {
+        padding: 0 12em;
+    }
+}
+
+.navbar .selected {
+    /* border-bottom: 1px solid black; */
+    text-decoration: underline;
+    color: #454545 !important; 
+}
+
+main {
+    border-top: 1px solid lightgrey;
+    padding-bottom: 3em;
+}
+
+main .heading {
+    padding-top: 1.3em;
+    font-size: 2.4em;
+    font-weight: 700;
+    padding-bottom: 0.7em;
+    text-transform: capitalize;
+}
+
+main .sub-heading {
+    padding-top: 1.3em;
+    font-size: 1.8em;
+    font-weight: 600;
+    padding-bottom: 1em;
+    text-transform: capitalize;
+}
+
+.card-icons a {
+    padding: 0 1em 0 0 ;
+}
+
+.card-icons img {
+    max-width: 2em;
+}
+
+.card-icons img:hover {
+    color: #626262 !important;
+    /* color: white; /* Optional: ensures text stays readable */
+    transition: background-color 0.3s ease; /* Makes the color fade in smoothly */ 
+}
+
+.card-icons {
+    text-align: left;
+}
+
+.gallery .card {
+    border: none !important;
+}
+
+.gallery .card .card-footer {
+    border: none !important;
+    background-color: white;
+    margin-bottom: 2.5em;
+}
+
+
+.gallery .card-main-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gallery .card-img-top {
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.gallery .card:hover .card-img-top {
+    border-color: #000000; /* 1px solid black border */
+}
+
+.gallery .card:hover .card-title {
+    text-decoration: underline;
+}
+
+.gallery .card-title {
+    transition: text-decoration 0.3s ease;
+}
+
+ul {
+  list-style-position: inside;
+}
